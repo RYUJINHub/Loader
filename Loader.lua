@@ -23,7 +23,7 @@ local Options = Fluent.Options
 do
     Fluent:Notify({
         Title = "Notification",
-        Content = "SInestria running in Script.",
+        Content = "Sinestria running in Script.",
         SubContent = "", -- Optional
         Duration = 10 -- Set to nil to make the notification not disappear
     })
@@ -35,11 +35,7 @@ end
 local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default = false })
 
     Toggle:OnChanged(function(Value)
-    _G.WIN = Value
-    if _G.WIN then
-         while _G.WIN do wait()
-               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
-         end
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
     end
     end)
 
@@ -65,7 +61,7 @@ Options.MyToggle:SetValue(false)
 
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK🚫", Default = false })
+local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.antiAFK = Value
