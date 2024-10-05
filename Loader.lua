@@ -45,6 +45,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Reset☠️", Defa
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
+
 end)
 
 Options.MyToggle:SetValue(false)
@@ -53,6 +54,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", De
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.SpinWheel:FireServer()
+
 end)
 
 Options.MyToggle:SetValue(false)
