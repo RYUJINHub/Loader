@@ -87,7 +87,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK🚫", Default =
 
 
 
-    Tabs.Setting:AddToggle({
+    Tabs.Setting:AddButton({
         Title = "Rejoin",
         Description = "",
         Callback = function()
@@ -101,7 +101,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK🚫", Default =
         end
     })
     
-    Tabs.Setting:AddToggle({
+    Tabs.Setting:AddButton({
         Title = "Hop Server",
         Description = "",
         Callback = function()
@@ -128,7 +128,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK🚫", Default =
     
     
     
-    Tabs.Setting:AddToggle({
+    Tabs.Setting:AddButton({
         Title = "FpsBoots🚀",
         Description = "",
         Callback = function()
