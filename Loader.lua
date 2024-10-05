@@ -38,7 +38,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default 
     _G.WIN = Value
     if _G.WIN then
          while _G.WIN do wait()
-         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
          end
     end
     end)
