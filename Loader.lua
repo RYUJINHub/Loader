@@ -93,7 +93,7 @@ Tabs.Settings:AddButton({
     })
     
     Tabs.Settings:AddButton({
-        Title = "Hop Server",
+        Title = "Hop To Low Server",
         Description = "",
         Callback = function()
             local Http = game:GetService("HttpService")
@@ -197,7 +197,7 @@ Tabs.Settings:AddButton({
             end)
         end
     })
-    
+
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
 -- InterfaceManager (Allows you to have a interface managment system)
