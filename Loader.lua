@@ -36,7 +36,6 @@ local Button = Tabs.Main:AddButton("MyButton", {Title = "Auto Win🏆", Default 
 
     Toggle:OnChanged(function(Value)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
-    end
     end)
 
     Options.MyToggle:SetValue(false)
