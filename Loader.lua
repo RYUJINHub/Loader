@@ -41,7 +41,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default 
     Options.MyToggle:SetValue(false)
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Reset", Default = false })
+local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
@@ -49,7 +49,7 @@ end)
 
 Options.MyToggle:SetValue(false)
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Spinwheel", Default = false })
+local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", Default = false })
 
 Toggle:OnChanged(function(Value)
 
@@ -59,7 +59,7 @@ Options.MyToggle:SetValue(false)
 
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK", Default = false })
+local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK🚫", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.antiAFK = Value
