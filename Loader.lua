@@ -78,8 +78,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = 
 
 
 
-
-    Tabs.Setting:AddButton({
+Tabs.Settings:AddButton({
         Title = "Rejoin",
         Description = "",
         Callback = function()
@@ -93,7 +92,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = 
         end
     })
     
-    Tabs.Setting:AddButton({
+    Tabs.Settings:AddButton({
         Title = "Hop Server",
         Description = "",
         Callback = function()
@@ -120,7 +119,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = 
     
     
     
-    Tabs.Setting:AddButton({
+    Tabs.Settings:AddButton({
         Title = "FpsBoots🚀",
         Description = "",
         Callback = function()
@@ -198,7 +197,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = 
             end)
         end
     })
-
+    
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
 -- InterfaceManager (Allows you to have a interface managment system)
