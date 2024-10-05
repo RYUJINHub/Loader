@@ -41,7 +41,7 @@ local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Win🏆", Defau
     Options.MyToggle:SetValue(false)
 
 
-local Button = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
+local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
