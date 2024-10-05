@@ -32,7 +32,7 @@ end
 
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default = false })
+local Button = Tabs.Main:AddButton("MyButton", {Title = "Auto Win🏆", Default = false })
 
     Toggle:OnChanged(function(Value)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
@@ -42,7 +42,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default 
     Options.MyToggle:SetValue(false)
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
+local Button = Tabs.Main:AddButton("MyButton", {Title = "Auto Reset☠️", Default = false })
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
