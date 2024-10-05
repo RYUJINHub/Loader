@@ -82,7 +82,8 @@ local StatusWins = Tabs.Genaral:AddParagraph({
 	spawn(function()
 		pcall(function()
 			while wait() do
-				StatusWins:SetDesc("You Wins : "..tostring(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Wins","Check").." Wins"))
+				StatusWins:SetDesc("You Wins : "..tostring(game.Players.LocalPlayer.leaderstats.Wins.value
+("Wins","Check").." Wins"))
 			end
 		end)
 	end)
