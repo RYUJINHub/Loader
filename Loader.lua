@@ -14,7 +14,7 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://11433532654" }),
+    Genaral = Window:AddTab({ Title = "Genaral", Icon = "rbxassetid://11433532654" }),
     Setting = Window:AddTab({ Title = "Setting", Icon = "settings" })
 }
 
@@ -32,7 +32,7 @@ end
 
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default = false })
+local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Win🏆", Default = false })
 
     Toggle:OnChanged(function(Value)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
@@ -41,7 +41,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default 
     Options.MyToggle:SetValue(false)
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
+local Button = Tabs.Genaral:AddButton("MyToggle", {Title = "Auto Reset☠️", Default = false })
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
@@ -50,7 +50,7 @@ end)
 
 Options.MyToggle:SetValue(false)
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", Default = false })
+local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", Default = false })
 
 Toggle:OnChanged(function(Value)
 game:GetService("ReplicatedStorage").RemoteEvents.SpinWheel:FireServer()
@@ -61,7 +61,7 @@ Options.MyToggle:SetValue(false)
 
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = false })
+local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.antiAFK = Value
