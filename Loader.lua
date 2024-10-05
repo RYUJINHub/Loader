@@ -35,10 +35,11 @@ end
 local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default = false })
 
     Toggle:OnChanged(function(Value)
-        _G.WIN = Value
+    _G.WIN = Value
     if _G.WIN then
          while _G.WIN do wait()
                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
+         end
     end
     end)
 
@@ -48,10 +49,11 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Win🏆", Default 
 local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
 
 Toggle:OnChanged(function(Value)
-_G.WIN = Value
-if _G.WIN then
-while _G.WIN do wait()
+_G.Reset = Value
+if _G.Reset then
+     while _G.Reset do wait()
 game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
+     end
 end
 end)
 
