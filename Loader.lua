@@ -75,7 +75,17 @@ local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default
 
     Options.MyToggle:SetValue(false)
 
-
+local StatusWins = Tabs.Genaral:AddParagraph({
+    Title = "Wins Status",
+    Content = ""
+})
+	spawn(function()
+		pcall(function()
+			while wait() do
+				StatusWins:SetDesc("You Wins : "..tostring(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Wins","Check").." Wins"))
+			end
+		end)
+	end)
 
 
 Tabs.Setting:AddButton({
