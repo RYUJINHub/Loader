@@ -3,7 +3,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Obby On Bike | Sinestria Hub",
+    Title = "Obby But You're On a Bike | Sinestria Hub",
     SubTitle = "",
     TabWidth = 160,
     Size = UDim2.fromOffset(510, 390),
