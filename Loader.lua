@@ -107,6 +107,23 @@ if _G.DailyRewards then
            }
            
            game:GetService("ReplicatedStorage").RemoteEvents.DailyReward:FireServer(unpack(args))
+           local args = {
+               [1] = 5
+           }
+           
+          game:GetService("ReplicatedStorage").RemoteEvents.DailyReward:FireServer(unpack(args))
+          
+          local args = {
+               [1] = 6
+           }
+          
+          game:GetService("ReplicatedStorage").RemoteEvents.DailyReward:FireServer(unpack(args))
+          
+          local args = {
+               [1] = 7
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.DailyReward:FireServer(unpack(args))
  
      end
 end
