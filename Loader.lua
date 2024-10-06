@@ -195,15 +195,16 @@ Options.MyToggle:SetValue(false)
 local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Season Pass Claim", Default = false })
 
 Toggle:OnChanged(function(Value)
-_G.SsRewards = Value
-if _G.SsRewards then
-     while _G.SsRewards do wait()
+_G.SsPass = Value
+if _G.SsPass then
+     while _G.SsPass do wait()
           local args = {
                [1] = 1
            }
            
           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
-    end
+
+     end
 end
 end)
 
