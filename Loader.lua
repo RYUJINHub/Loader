@@ -15,7 +15,8 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Genaral = Window:AddTab({ Title = "Genaral", Icon = "rbxassetid://11433532654" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "settings" })
+    Miscellaneous = Window:AddTab({ Title = "Miscellaneous", Icon = "Chest" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
 local Options = Fluent.Options
@@ -32,31 +33,22 @@ end
 
 
 
-local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Win🏆", Default = false })
-
-    Toggle:OnChanged(function(Value)
-         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
-    end)
-
-    Options.MyToggle:SetValue(false)
-
-
-local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Reset☠️", Default = false })
-
-Toggle:OnChanged(function(Value)
-game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
-end)
-
-Options.MyToggle:SetValue(false)
-
-local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", Default = false })
-
-Toggle:OnChanged(function(Value)
-game:GetService("ReplicatedStorage").RemoteEvents.SpinWheel:FireServer()
-
-end)
-
-Options.MyToggle:SetValue(false)
+Tabs.Genaral:AddButton({
+        Title = "Auto Win🏆",
+        Description = "",
+        Callback = function()
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
+        end
+    })
+    
+            
+Tabs.Genaral:AddButton({
+        Title = "Reset☠️",
+        Description = "",
+        Callback = function()
+           game:GetService("ReplicatedStorage").RemoteEvents.ReportReset:FireServer()
+        end
+    })
 
 
 
@@ -68,16 +60,27 @@ local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default
         while _G.antiAFK do wait(20)
     
         game:GetService'VirtualUser':Button1Down(Vector2.new(788, 547))
-        
+       
     end
     end)
 
     Options.MyToggle:SetValue(false)
 
 
+ local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", Default = false })
+
+ Toggle:OnChanged(function(Value)
+ game:GetService("ReplicatedStorage").RemoteEvents.SpinWheel:FireServer()
+
+ end)
+
+ Options.MyToggle:SetValue(false)
+
+ 
+ 
 
 
-Tabs.Setting:AddButton({
+Tabs.Settings:AddButton({
         Title = "Rejoin",
         Description = "",
         Callback = function()
@@ -91,7 +94,7 @@ Tabs.Setting:AddButton({
         end
     })
     
-    Tabs.Setting:AddButton({
+    Tabs.Settings:AddButton({
         Title = "Hop Server",
         Description = "",
         Callback = function()
@@ -118,7 +121,7 @@ Tabs.Setting:AddButton({
     
     
     
-    Tabs.Setting:AddButton({
+    Tabs.Settings:AddButton({
         Title = "FpsBoots🚀",
         Description = "",
         Callback = function()
