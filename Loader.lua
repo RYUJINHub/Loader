@@ -129,6 +129,101 @@ if _G.DailyRewards then
 end
 end)
 
+local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Star Rewards Claim", Default = false })
+
+Toggle:OnChanged(function(Value)
+_G.StarRewards = Value
+if _G.StarRewards then
+     while _G.StarRewards do wait()
+          local args = {
+               [1] = "Claim",
+               [2] = 1
+          }
+           
+          game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
+          
+          local args = {
+               [1] = "Claim",
+               [2] = 2
+           }
+          
+          game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+          
+          local args = {
+               [1] = "Claim",
+               [2] = 3
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           
+          
+           local args = {
+                [1] = "Claim",
+                [2] = 4
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           
+
+           local args = {
+                [1] = "Claim",
+                [2] = 5
+           }
+            
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           
+
+           local args = {
+                [1] = "Claim",
+                [2] = 6
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+          
+
+           local args = {
+                [1] = "Claim",
+                [2] = 7
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+
+           local args = {
+                [1] = "Claim",
+                [2] = 8
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+
+           local args = {
+                [1] = "Claim",
+                [2] = 9
+           }
+           
+           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+
+     end
+end
+end)
+
+Options.MyToggle:SetValue(false)
+
+local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Season Pass Claim", Default = false })
+
+Toggle:OnChanged(function(Value)
+_G.SsPass = Value
+if _G.SsPass then
+     while _G.SsPass do wait()
+          local args = {
+               [1] = 1
+                     
+          game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+
+     end
+end
+end)
+
+Options.MyToggle:SetValue(false)
 
 
 
