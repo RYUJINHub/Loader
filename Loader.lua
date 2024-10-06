@@ -204,6 +204,7 @@ if _G.SsRewards then
            
           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
     end
+end
 end)
 
 Options.MyToggle:SetValue(false)
