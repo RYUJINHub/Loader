@@ -113,7 +113,7 @@ end
 end)
 
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Star Rewards Claim", Default = false })
+local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Star Rewards Claim", Default = false })
 
 Toggle:OnChanged(function(Value)
 _G.StarRewards = Value
@@ -200,8 +200,7 @@ if _G.SsPass then
      while _G.SsPass do wait()
           local args = {
                [1] = 1
-           }
-           
+                     
           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
 
      end
