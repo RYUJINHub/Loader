@@ -147,14 +147,14 @@ if _G.StarRewards then
                [2] = 2
            }
           
-          game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+          game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
           
           local args = {
                [1] = "Claim",
                [2] = 3
            }
            
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
            
           
            local args = {
@@ -162,7 +162,7 @@ if _G.StarRewards then
                 [2] = 4
            }
            
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
            
 
            local args = {
@@ -170,7 +170,7 @@ if _G.StarRewards then
                 [2] = 5
            }
             
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
            
 
            local args = {
@@ -178,7 +178,7 @@ if _G.StarRewards then
                 [2] = 6
            }
            
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
           
 
            local args = {
@@ -186,21 +186,21 @@ if _G.StarRewards then
                 [2] = 7
            }
            
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
 
            local args = {
                 [1] = "Claim",
                 [2] = 8
            }
            
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
 
            local args = {
                 [1] = "Claim",
                 [2] = 9
            }
            
-           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
+           game:GetService("ReplicatedStorage").RemoteEvents.SessionReward:FireServer(unpack(args))
 
      end
 end
