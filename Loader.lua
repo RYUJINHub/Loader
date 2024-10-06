@@ -71,8 +71,12 @@ local Toggle = Tabs.Genaral:AddToggle("MyToggle", {Title = "AntiAFK⏰", Default
  local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Auto Spinwheel🔮", Default = false })
 
  Toggle:OnChanged(function(Value)
- game:GetService("ReplicatedStorage").RemoteEvents.SpinWheel:FireServer()
-
+ _G.Spin = Value
+if _G.Spin then
+     while _G.Spin do wait()
+           game:GetService("ReplicatedStorage").RemoteEvents.SpinWheel:FireServer()
+     end
+ end
  end)
 
  Options.MyToggle:SetValue(false)
