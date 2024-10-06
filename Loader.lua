@@ -215,7 +215,8 @@ _G.SsPass = Value
 if _G.SsPass then
      while _G.SsPass do wait()
           local args = {
-               [1] = 1
+               [1] = "ClaimAll"
+          }
                      
           game:GetService("ReplicatedStorage").RemoteEvents.SeasonPass:FireServer(unpack(args))
 
