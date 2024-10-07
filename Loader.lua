@@ -133,6 +133,8 @@ if _G.DailyRewards then
 end
 end)
 
+    Options.MyToggle:SetValue(false)
+
 local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Star Rewards Claim", Default = false })
 
 Toggle:OnChanged(function(Value)
