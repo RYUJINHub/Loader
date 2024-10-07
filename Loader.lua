@@ -133,7 +133,7 @@ if _G.DailyRewards then
 end
 end)
 
-    Options.MyToggle:SetValue(false)
+   
 
 local Toggle = Tabs.Miscellaneous:AddToggle("MyToggle", {Title = "Star Rewards Claim", Default = false })
 
@@ -415,7 +415,7 @@ ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.156000003, 0, -0, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
-ImageButton.Image = "rbxassetid://123254901786433"
+ImageButton.Image = ""
 ImageButton.MouseButton1Click:Connect(function()
 game.CoreGui:FindFirstChild("ScreenGui").Enabled = not game.CoreGui:FindFirstChild("ScreenGui").Enabled
 end)
