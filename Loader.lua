@@ -65,7 +65,7 @@ end
 
 local Dropdown = Tabs.Genaral:AddDropdown("Dropdown", {
     Title = "Select World",
-    Values = {"World1", "World2", "World3", "World4", "World5", "World6", "World7"},
+    Values = {"World1", "World2", "World3", "World4", "World5", "World6", "World7, "World8", "World9", "World10"},
     Multi = false,
     Default = 1,
 })
