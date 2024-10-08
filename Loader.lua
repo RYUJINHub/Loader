@@ -18,7 +18,7 @@ function TeleportToWorld(World)
     elseif World == "World9" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.478474, -3.55, -13511.1)
     elseif World == "World10" then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -28.7534, -27640.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(115.23468017578125, 1.4569485187530518, -11286.3994140625)
     end
 end
 
