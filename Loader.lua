@@ -1,3 +1,28 @@
+function TeleportToWorld(World)
+    if World == "World1" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
+    elseif World == "World2" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.269, -3.55, -13632.4)
+    elseif World == "World3" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(389.3, 24.55, -8712.4)
+    elseif World == "World4" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, 382.001, -21030)
+    elseif World == "World5" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(275.5, 63.1533, -11131.1)
+    elseif World == "World6" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -15890.6)
+    elseif World == "World7" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.223, 7.61394, -22065.8)
+    end
+end
+
+
+
+
+
+
+
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -32,12 +57,23 @@ do
 end
 
 
+local Dropdown = Tabs.Genaral:AddDropdown("Dropdown", {
+    Title = "Select World",
+    Values = {"World1", "World2", "World3", "World4", "World5", "World6", "World7"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:OnChanged(function(Value)
+    World = Value
+end)
+
 
 Tabs.Genaral:AddButton({
         Title = "Auto Win🏆",
         Description = "",
         Callback = function()
-           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -20965)
+           TeleportToWorld(Dropdown.Value)
         end
     })
     
