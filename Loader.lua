@@ -13,6 +13,12 @@ function TeleportToWorld(World)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -3.55, -15890.6)
     elseif World == "World7" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.223, 7.61394, -22065.8)
+    elseif World == "World8" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.3642420526593924e-12, -3.5284550189971924, -13511.6005859375)
+    elseif World == "World9" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.478474, -3.55, -13511.1)
+    elseif World == "World10" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, -28.7534, -27640.7)
     end
 end
 
