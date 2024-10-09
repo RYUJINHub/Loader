@@ -18,7 +18,11 @@ function TeleportToWorld(World)
     elseif World == "World9" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.478474, -3.55, -13511.1)
     elseif World == "World10" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.3642420526593924e-12, -3.5284550189971924, -13511.6005859375)
+    elseif World == "World11" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(115.23468017578125, 1.4569485187530518, -11286.3994140625)
+    elseif World == "World12" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.00023651123047, -2.851426124572754, -19080.75)
     end
 end
 
@@ -65,7 +69,7 @@ end
 
 local Dropdown = Tabs.Genaral:AddDropdown("Dropdown", {
     Title = "Select World",
-    Values = {"World1", "World2", "World3", "World4", "World5", "World6", "World7, "World8", "World9", "World10"},
+    Values = {"World1", "World2", "World3", "World4", "World5", "World6", "World7, "World8", "World9", "World10", "World11", "World12"},
     Multi = false,
     Default = 1,
 })
